@@ -142,7 +142,7 @@ export const useAuthStore = defineStore('auth', () => {
                     const initHomePage = config.initialNavigation.find((element) => element.role === role);
                     console.log('  |--> Available InitHomePage:', initHomePage);
 
-                    if (!initHomePage || !initHomePage.length) {
+                    if (!initHomePage) {
                         const rolesComponentes = config.components.navigation.find((element) => element.role === role);
 
                         if (!rolesComponentes) {
